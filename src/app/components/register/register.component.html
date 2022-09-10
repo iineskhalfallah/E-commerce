@@ -1,0 +1,60 @@
+<div class="appnav">
+    <app-nav></app-nav>
+  </div>
+<div class="Container">
+    <div class="PageContent PageContent--fitScreen PageContent--extraNarrow">
+        <form id="create_customer" accept-charset="UTF-8" name="create_customer" (ngSubmit)="register()" class="Form Form--spacingTight form-group" [formGroup]="registerForm">
+            <header class="Form__Header">
+                <img src="assets/img/logo/cute.png" width="100px">
+                <h1 class="Form__Title Heading u-h1" style="font-size: 20px;" >Register</h1>
+                <p class="Form__Legend" style="font-size: 17px;" >Please fill in the information below:</p>
+            </header>
+            <div class="Form__Item"> 
+                <input type="text" name="firstname"
+                class="Form__Input form-control"  
+                [ngClass]="{'is-invalid': registerForm.get('firstname').touched && registerForm.get('firstname').invalid }"
+                placeholder="First name"   
+                formControlName ="firstname" > 
+                <label class="Form__FloatingLabel">First name</label>
+                <span class="invalid-feedback">First Name can't be blank </span>
+            </div>
+            <div class="Form__Item"> 
+                <input type="text" class="Form__Input" 
+                name="customer[last_name]" aria-label="Last name" 
+                placeholder="Last name" formControlName ="lastname"> 
+                <label class="Form__FloatingLabel">Last name</label>
+                
+            </div>
+            <div class="Form__Item"> 
+                <input type="email" class="Form__Input  form-control" 
+                name="customer[email]" aria-label="Email" 
+                [ngClass]="{'is-invalid ': registerForm.get('email').touched && registerForm.get('email').invalid }"
+                placeholder="Email" required="required" formControlName ="email"> 
+                <label class="Form__FloatingLabel">Email</label>
+                <span class="invalid-feedback">
+                <span *ngIf="registerForm.get('email').hasError('required')"> email can't be blank</span>
+                <span *ngIf="registerForm.get('email').hasError('email')"> email must be valid</span>
+                </span>
+            </div>
+            <div class="Form__Item"> 
+                <input type="password" class="Form__Input  form-control _ar_hide_" 
+                [ngClass]="{'is-invalid': registerForm.get('password').touched && registerForm.get('password').invalid }"
+                name="customer[password]" aria-label="Password" 
+                placeholder="Password" required="required" 
+                _ar_hide_="width:400px;height:50.6667px;margin:0px;position:static;display:block;" 
+                formControlName ="password"> 
+                <label class="Form__FloatingLabel">Password</label>
+                <span class="invalid-feedback">
+                    <span *ngIf="registerForm.get('password').hasError('required')"> password required</span>
+                    <span *ngIf="registerForm.get('password').hasError('minlength')"> password must contain minimum 6 character </span>   
+                </span>
+            </div>
+           
+            <button type="submit" class="Form__Submit Button Button--primary Button--full navigable">Create my account</button>
+            <div class="Form__Hint Form__Hint--center"> 
+                <span class="Text--subdued" style="font-size: 17px;" >You have an account?</span> 
+                <a routerLink="/login"class="Link Link--secondary navigable" style="font-size: 17px;" > Log In</a>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,40 @@
+{
+  "cart": [
+    {
+      "product": {
+        "id": 1,
+        "productId": "93",
+        "productName": "nana t-shirt",
+        "productImage": "assets/img/t-shirt/nanatshirt.jpg",
+        "price": "40",
+        "qty": 1
+      },
+      "id": 4
+    },
+    {
+      "id": 5
+    },
+    {
+      "id": 6
+    },
+    {
+      "product": {
+        "id": "93",
+        "name": "nana t-shirt",
+        "price": "40",
+        "imageUrl": "assets/img/t-shirt/nanatshirt.jpg"
+      },
+      "id": 7
+    },
+    {
+      "product": {
+        "id": "93",
+        "name": "nana t-shirt",
+        "price": "40",
+        "imageUrl": "assets/img/t-shirt/nanatshirt.jpg"
+      },
+      "id": 8
+    }
+  ],
+  "wishList": []
+}

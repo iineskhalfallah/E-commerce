@@ -1,0 +1,50 @@
+<div class="appNavv">
+    <app-slider></app-slider>
+  </div>
+<div class="tableContainer container">
+    
+    <button class="Button my-5 navlink" routerLink="/admin/addproduct">Add Product</button>
+   
+    <table class="table table-striped">
+        <thead>
+            <tr>
+            <th class="Heading"scope="col">id</th>
+            <th class="Heading" scope="col">Product Name</th>
+            <th class="Heading" scope="col">Price</th>
+            <th class="Heading" scope="col">image</th>
+            <th class="Heading" scope="col">collection</th>
+            <th class="Heading" scope="col">brands</th>
+            <th class="Heading" scope="col">operation</th>
+
+        </tr>
+        </thead>
+        <tbody >
+            <tr *ngFor="let product of products ">
+               
+                    <th class="Heading"scope="col">{{product.id}}</th>
+                    <td class="Heading" scope="col">{{product.name}}</td>
+                    <td class="Heading" scope="col">{{product.price}}</td>
+                    <td class="Heading" scope="col"><img class="mypic" src={{product.imageUrl}}></td>
+                    <td class="Heading" scope="col">{{product.collection}}</td>
+                    <td class="Heading" scope="col">{{product.brands}}</td>
+                    
+                    <td>
+                        <button class="btn">
+                            <a routerLink="/admin/editproduct/{{product.id}}">
+                                <i class="fa fa-pencil"></i>
+                            </a>
+                        </button>
+                        <button class="btn" (click)="deleteProduct(product)">
+                            <a >
+                            <i class="fa fa-trash" aria-hidden="true"></i>
+                            </a>
+                        
+                        </button>
+                    </td>  
+            </tr>
+        </tbody>
+
+    </table>
+</div>
+
+

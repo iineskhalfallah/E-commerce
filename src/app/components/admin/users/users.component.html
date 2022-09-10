@@ -1,0 +1,49 @@
+<div class="appNavv">
+    <app-slider></app-slider>
+  </div>
+<div class="containerr">
+    <a class="Form__ItemHelp l Heading" routerLink="/admin/dashbord">go back to dashbord</a>
+    <br>
+    <button class="Button my-5 navlink"routerLink="/admin/adduser" >Add user</button>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+            <th class="Heading"scope="col">id</th>
+            <th class="Heading" scope="col">Name</th>
+            <th class="Heading" scope="col">last Name</th>
+            <th class="Heading" scope="col">email</th>
+            <th class="Heading" scope="col">password</th>
+            <th class="Heading" scope="col">role</th>
+            <th class="Heading" scope="col">operation</th>
+            
+
+        </tr>
+        </thead>
+        <tbody >
+            <tr *ngFor="let user of users">
+               
+                    <th class="Heading"scope="col">{{user.id}}</th>
+                    <td class="Heading" scope="col">{{user.name}}</td>
+                    <td class="Heading" scope="col">{{user.lastname}}</td>
+                    <td class="Heading" scope="col">{{user.email}}</td>
+                    <td class="Heading" scope="col">{{user.password}}</td>
+                    <td class="Heading" scope="col">{{user.role}}</td>
+                    
+                    
+                    <td>
+                        <button class="btn">
+                            <a routerLink="/admin/editusers/{{user.id}}">
+                                <i class="fa fa-pencil"></i>
+                            </a>
+                        </button>
+                        <button class="btn" (click)="deleteuser(user)">
+                            <a >
+                            <i class="fa fa-trash" aria-hidden="true"></i>
+                            </a>
+                        
+                        </button>
+                    </td>  
+            </tr>
+        </tbody>
+
+</table>

@@ -1,0 +1,94 @@
+
+<header class="Header Header--withIcons Header--center Header--initialized">
+  <div class="Header__Wrapper">
+  <div class="row ">
+    <div class="col">
+      <button ng-sidebar-content (click)="toggleSidebar()" class="Header__Icon"  >
+        <i class="fa fa-bars" aria-hidden="true"style="font-size: large;">
+          <span class="icon-button__badge Header__CartDot"></span>
+        </i>
+      </button>
+    </div>
+    <div class="col">
+        <div class="Header__FlexItem Header__FlexItem--logo">
+            <img src="assets/img/logo/adminLogo.png" class="logo"width="200"style="text-align:center;"> 
+        </div>
+    </div>
+    <div class="col">
+      <button class="icons">
+      <i class="fa fa-sign-out " routerLink="/login"></i>
+      </button>
+    </div> 
+  <nav class="Header__MainNav hidden-pocket hidden-lap">
+      <ul class="HorizontalList HorizontalList--spacingLoose">
+              <li class="HorizontalList__Item">
+              <a routerLink="/admin/dashbord"class="Heading u-h6 navigable"style="font-size: 12px;" >Product list</a>
+              </li>
+              <div class="dropdown">
+                  <li class="HorizontalList__Item">
+                  <button class="Heading u-h6 navigable" style="font-size: 12px;">Brands</button>
+                      <div class="dropdown-content">
+                      <ul class="Linklist" >
+                          <li class="Linklist__Item"><a class="Link Link--secondary navigable" routerLink="/admin/brands/attackontitan">Attack on Titan</a></li>
+                          <li class="Linklist__Item"><a class="Link Link--secondary navigable" routerLink="/admin/brands/naruto">Naruto</a></li>
+                          <li class="Linklist__Item"><a class="Link Link--secondary navigable" routerLink="/admin/brands/nana">Nana</a></li>
+                          <li class="Linklist__Item"><a class="Link Link--secondary navigable" routerLink="/admin/brands/jujutsukaisen">jujutsu kaisen</a></li>
+                          <li class="Linklist__Item"><a class="Link Link--secondary navigable" routerLink="/admin/brands/demonslayer">Demon slayer</a></li>
+                          <li class="Linklist__Item"><a class="Link Link--secondary navigable" routerLink="/admin/brands/other">others</a></li>
+                      </ul>
+                      </div>
+                  </li>
+              </div>
+              <div class="dropdown">
+              <li class="HorizontalList__Item " >
+                  <button class="Heading u-h6 navigable" style="font-size: 12px;"  >Collection</button>
+                  <div class="dropdown-content">
+                  <ul class="Linklist" >
+                  <li class="Linklist__Item"><a class="Link Link--secondary navigable"     routerLink="/admin/collection/t-shirts">T-shirt & hoodie</a></li>
+                      <li class="Linklist__Item"><a class="Link Link--secondary navigable" routerLink="/admin/collection/jeans">Jeans</a></li>
+                      <li class="Linklist__Item"><a class="Link Link--secondary navigable" routerLink="/admin/collection/glasspaintings">Glass paintings</a></li>
+                      <li class="Linklist__Item"><a class="Link Link--secondary navigable" routerLink="/admin/collection/phonecases">Phone Cases</a></li>
+                      <li class="Linklist__Item"><a class="Link Link--secondary navigable" routerLink="/admin/collection/totebags">Tote Bag</a></li>
+                  </ul>
+                  </div>
+              </li>
+              </div>
+              <li class="HorizontalList__Item">
+              <a routerLink="/admin/users" class="Heading u-h6 navigable" style="font-size: 12px;">Users</a>
+              </li>
+      </ul>
+  </nav>
+</div> 
+</div>
+</header>
+
+<ng-sidebar-container>
+  <ng-sidebar [opened]="opened" class="ng-sidebar__content--animate">
+      <div id="sidebar-cart" class="Drawer Drawer--fromRight" >
+        <div class="Drawer__Header Drawer__Header--bordered Drawer__Container"> 
+            <span class="Drawer__Title Heading u-h4" style="font-size: 20px;" >admin panel</span> 
+            <button class="Drawer__Close Icon-Wrapper--clickable navigable" >
+                <i (click)="toggleSidebar()" class="fa fa-close" style="font-size: large;"></i>
+            </button>
+        </div>
+       
+        <form class="Cart Drawer__Content"  >
+          
+        <div class="Drawer__Main" >
+          <ul class="">
+              <li><a class=" Heading "style="font-size: 17px;" routerLink=""aria-current="page">Home</a></li>
+              <li><a class=" Heading " style="font-size: 17px;"routerLink="/admin/dashbord">Dashboard</a></li>
+              <li><a class=" Heading " routerLink="/admin/prods" style="font-size: 17px;">Products</a></li>
+              <li><a class="Heading " routerLink="/admin/brands" style="font-size: 17px;">Brands</a></li>
+              <li><a class="Heading "routerLink="/admin/collection"  style="font-size: 17px;" href="" >Collection</a></li>
+              <li><a class=" Heading " style="font-size: 17px;"routerLink="/admin/users">Users</a></li>
+          </ul>
+          </div>
+          <div class="Drawer__Footer" data-drawer-animated-buttom>
+              <button class="Cart__Checkout btncheckout" routerLink="/login">logout</button>
+          </div>
+      </form>
+    </div>
+  
+    </ng-sidebar>
+</ng-sidebar-container>

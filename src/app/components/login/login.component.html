@@ -1,0 +1,34 @@
+<div class="appnav">
+    <app-nav></app-nav>
+  </div>
+<div class="Container">
+    <div class="PageContent PageContent--fitScreen PageContent--extraNarrow">
+    <form [formGroup]="loginForm" (ngSubmit)=" login()" id="customer_login" accept-charset="UTF-8" name="login" class="Form Form--spacingTight" style="display: block" data-hs-cf-bound="true">
+        <header class="Form__Header">
+            <div style="margin:0 auto;">
+                <img src="assets/img/logo/Cute Itachi.png" width="100px">
+                <div> 
+                    <br>
+                    <h1 class="Form__Title Heading u-h1" style="font-size: 20px;" >Login</h1>
+                    <p class="Form__Legend" style="font-size: 17px;" >Please enter your e-mail and password:</p>
+                </div>
+            </div>
+        </header>
+        <div class="Form__Item"> 
+            <input formControlName="email" type="email" class="Form__Input" name="customer[email]" required placeholder="Email" aria-label="Email" autofocus="" >
+            <span class="invalid-feedback">Enter a valid e-mail</span> 
+        </div>
+        <div class="Form__Item"> 
+            <input formControlName="password" type="password" class="Form__Input _ar_hide_" name="customer[password]" required="required" placeholder="Password"  aria-label="Password" > 
+            <span class="invalid-feedback">Password can't be blank</span>
+            <button type="button" class="Form__ItemHelp Link Link--primary navigable" data-action="toggle-recover-form">Forgot password?</button>
+        </div>
+        <button type="submit" class="Form__Submit Button Button--primary Button--full navigable">Login</button>
+        <div class="Form__Hint Form__Hint--center"> 
+            <span class="Text--subdued" style="font-size: 17px;" >Don't have an account?</span> 
+            <a routerLink="/register"class="Link Link--secondary navigable" style="font-size: 17px;" > Create one</a>
+        </div>
+        <input type="hidden" name="return_url" value="/account">
+    </form>
+</div>
+</div>

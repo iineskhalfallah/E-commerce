@@ -1,0 +1,12 @@
+.container{
+    max-width:100%;
+    margin-top: 50px;
+    margin-bottom: 180px;
+}
+.col-md-2{
+    margin-left: 20px;
+}
+.col-md-3{
+    display:flex;
+    position: relative;
+}

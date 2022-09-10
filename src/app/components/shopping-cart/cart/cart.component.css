@@ -1,0 +1,21 @@
+.list-group-item{
+    
+    color: #1b133c;
+    letter-spacing: 2.4px;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: fallback,sans-serif;
+    text-transform: uppercase;
+}
+.a{
+    background-color: #1b133c;
+    color: aliceblue;
+   
+}
+strong{
+    letter-spacing: 2.6px;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: fallback,sans-serif;
+    text-transform: uppercase;
+}

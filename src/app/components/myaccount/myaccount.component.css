@@ -1,0 +1,109 @@
+.Container {
+    padding: 0 50px;
+    margin-top: 100px;
+}
+.Container--narrow {
+    max-width: 1420px;
+}
+
+.Container {
+    margin: auto;
+    padding: 0 15px;
+}
+.PageHeader {
+    margin: 50px 0;
+}
+.PageHeader {
+    position: relative;
+    margin: 35px 0;
+}
+.PageLayout--breakLap {
+    display: block;
+}
+
+.PageLayout {
+    flex-wrap: nowrap;
+}
+.SectionHeader:not(:only-child) {
+    margin-bottom: 40px;
+}
+.features--heading-uppercase .Heading {
+    letter-spacing: .2em;
+    text-transform: uppercase;
+}
+.hh{
+    text-align: center;
+}
+.PageHeader__Back {
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.Text--subdued {
+    color: #6a6a6a;
+}
+.Heading {
+    font-family: var(--heading-font-family);
+    font-weight: var(--heading-font-weight);
+    font-style: var(--heading-font-style);
+    color: var(--heading-color);
+    transition: color .2s ease-in-out;
+}
+.Link {
+    transition: color .2s ease-in-out,opacity .2s ease-in-out;
+}
+.PageLayout--breakLap .PageLayout__Section:first-child {
+    margin-bottom: 60px;
+}
+
+.Segment__Title {
+    margin-bottom: 34px;
+}
+
+.Segment__Title {
+    margin-bottom: 24px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ffffff;
+    color: #6a6a6a;
+}
+.PageLayout__Section:first-child {
+    margin-bottom: 0;
+}
+
+.PageLayout--breakLap .PageLayout__Section+.PageLayout__Section {
+    margin-left: 0;
+    width: 100%;
+}
+.PageLayout__Section--secondary {
+    flex: 1 1 200px;
+    max-width: 200px;
+}
+.PageLayout__Section {
+    flex: 1 0 0;
+}
+.Segment__ButtonWrapper {
+    margin-top: 32px;
+}
+
+a {
+    color: inherit;
+    background-color: transparent;
+    text-decoration: none;
+}
+p{
+    font-family: var(--text-font-family);
+    font-style: var(--text-font-style);
+    color: var(--text-color);
+    background: var(--background);
+    line-height: 1.65;
+}
+:root {
+
+    --text-font-family: "Nunito Sans", sans-serif;
+    --text-font-weight: 400;
+    --text-font-style: normal;
+    --base-text-font-size: 14px;
+    --default-text-font-size: 14px;
+    --background: #ffffff;
+    
+}

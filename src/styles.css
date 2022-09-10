@@ -1,0 +1,362 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500,700");
+html{
+    overflow-x: hidden;
+}
+.Container {
+    
+    padding: 0 80px;
+   
+}
+.appNavv{
+    position:sticky;
+    top:0;
+    Z-INDEX: 6;
+    background-color:#ffffff;
+}
+.tableContainer{
+    margin-left: 30px;
+    padding-right:30px;
+    margin-right: 80px;
+    padding: 0 80px;
+}
+table{
+    margin-right:40px;
+    width: 80%;
+}
+.mypic{
+    width: 20%;
+}
+.container{
+    max-width: 100%;
+    left:0;
+    right: 0;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+td{
+    text-align: center;
+    
+}
+th{
+    text-align: center;
+}
+.appnav{
+    position:sticky;
+    top:0;
+    z-index: 200;
+    background-color: #ffffff;
+}
+.PageContent--fitScreen {
+    min-height: calc(100vh - 160px);
+    display: flex;
+    align-items: center;
+}
+.PageContent {
+    margin-bottom: 80px;
+    margin-top: 80px;
+    margin: 10px auto;
+}
+
+.PageContent--extraNarrow {
+    max-width: 400px;
+}
+.Form {
+    width: 100%;
+}
+.Form__Header {
+    margin-bottom: 24px;
+    text-align: center;
+    display: block;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    border-style: none;
+    vertical-align: top;
+}
+.Heading {
+    letter-spacing: .2em;
+    text-transform: uppercase;
+}
+.Heading {
+    font-family: var(--heading-font-family);
+    font-weight: var(--heading-font-weight);
+    font-style: var(--heading-font-style);
+    color: var(--heading-color);
+    transition: color .2s ease-in-out;
+}
+:root {
+    --heading-font-family: Montserrat, sans-serif;
+    --heading-font-weight: 500;
+    --heading-font-style: normal;
+    --text-font-family: "Nunito Sans", sans-serif;
+    --text-font-weight: 400;
+    --text-font-style: normal;
+    --base-text-font-size: 14px;
+    --default-text-font-size: 14px;
+    --background: #ffffff;
+    --background-rgb: 255, 255, 255;
+    --light-background: #ffffff;
+    --light-background-rgb: 255, 255, 255;
+    --heading-color: #1b133c;
+    --button-background: #1b133c;
+    --button-background-rgb: 27, 19, 60;
+    --button-text-color: #ffffff;
+    --border-color: ;
+    --text-color-light: ;
+}
+.Form--spacingTight .Form__Item {
+    margin-bottom: 15px;
+}
+.Form__Input, .Form__Textarea, .spr-form-input-email, .spr-form-input-text, .spr-form-input-textarea {
+    -webkit-appearance: none;
+    display: block;
+    padding: 12px 14px;
+    border-radius: 0;
+    outline:none;
+    border: 1px solid #dddce2;
+    width: 100%;
+    line-height: normal;
+    resize: none;
+    transition: border-color .1s ease-in-out;
+    background: 0 0;
+}
+.Form__Input:focus{
+    outline: 1px solid var(--heading-color);
+}
+.Form__Input:not(:placeholder-shown)~.Form__FloatingLabel, .Form__Textarea:not(:placeholder-shown)~.Form__FloatingLabel {
+    opacity: 1;
+    background: var(--background);
+    transform: translateY(0);
+}
+.Form__Submit {
+    display: block;
+    margin-top: 30px;
+}
+.Button--full {
+    width: 100%;
+}
+.Form__FloatingLabel {
+    visibility: hidden;
+    position: absolute;
+    bottom: calc(100% - 8px);
+    left: 10px;
+    padding: 0 5px;
+    line-height: normal;
+    color:#6a6a6a;
+    font-size: 12px;
+    background: #ffffff;
+    pointer-events: none;
+    transition: all .3s ease-in-out;
+}
+.l{
+    margin-top:30px;
+    padding-bottom: 20px;
+    text-decoration:none;
+}
+a:hover{
+     color:#1b133c;
+ }
+.Form__ItemHelp {
+    position: absolute;
+    font-size: 14px;
+    margin-bottom: 5px;
+    
+    color:#6a6a6a;
+    
+}
+button {
+    padding: 0;
+    overflow: visible;
+    background: 0 0;
+    border: none;
+    border-radius: 0;
+    text-transform: none;
+}
+.Form__Hint:not(:last-child) {
+    margin-bottom: 32px;
+}
+.Form__Hint--center {
+    text-align: center;
+}
+.Form__Hint {
+    margin: 24px 0 0 0;
+}
+.Text--subdued {
+    color: #6a6a6a;
+}
+.Link {
+    transition: color .2s ease-in-out;
+    opacity :.2s ease-in-out;
+}
+.Link:hover{
+    color:#6a6a6a
+}
+a {
+    color: inherit;
+    background-color: transparent;
+    text-decoration: none;
+}
+/* ------------------------------------------------------------------------------------- */
+.Heading {
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    font-family: var(--heading-font-family);
+    font-weight: var(--heading-font-weight);
+    font-style: var(--heading-font-style);
+    color: var(--heading-color);
+    font-size: 20px;
+    transition: color .2s ease-in-out;
+}
+
+:root {
+    --heading-font-family: Montserrat, sans-serif;
+    --heading-font-weight: 500;
+    --heading-font-style: normal;
+    --text-font-family: "Nunito Sans", sans-serif;
+    --text-font-weight: 400;
+    --text-font-style: normal;
+    --button-background: #1b133c;
+    --button-text-color: #ffffff;
+    --border-color: #5e5d5f;
+    --navigation-background: #1b133c;
+    --footer-text-color: #6a6a6a;
+    --product-sale-price-color: #f94c43;
+    --window-height: 926px;
+    --drawer-transition-timing: cubic-bezier(0.645, 0.045, 0.355, 1)
+}
+.announcementBar {
+    
+    font-family: var(--heading-font-family);
+    font-size: var(--heading-font-weight);
+
+}
+
+
+
+
+
+
+
+/* ---------------------------------------------------------------------------------------- */
+/* collection style */
+.card{
+    padding: 6px;
+    margin-bottom: 12px;
+}
+.bd-placeholder-img{
+
+    border: none;
+    padding: 0%;
+}
+.image{
+    width: 100%;
+    height:450px;
+}
+.card{
+    width: auto;
+    border: none;
+    height:  100%;
+    display: flex;
+}
+
+.card-body{
+    text-align: center;
+}
+.Heading{
+    color: #1b133c;
+    
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    font-family: var(--heading-font-family);
+    font-weight: var(--heading-font-weight);
+    font-style: var(--heading-font-style);
+}
+.image:hover{
+    filter:blur(8px);
+    -webkit-filter:blur(8px);
+}
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+.middle:hover{
+    opacity: 5;
+}
+a{
+    text-decoration: none;
+}
+.p{
+    color: #5e5d5f;
+    letter-spacing: .2em;
+    text-transform: uppercase; 
+}
+.btnn-group{
+    width:100%;
+}
+.btnn{  
+    display:block;
+    padding: 14px 28px;
+    line-height: normal;
+    border: 1px solid transparent;
+    border-radius: 5;
+    text-transform: uppercase;
+    font-size:  12px;
+    text-align: center;
+    margin-bottom: 12px;
+    letter-spacing: .2em;
+    background-color: #1b133c;
+    border-color: #1b133c;
+    color: #ffffff;
+    font-family: var(--heading-font-family);
+    font-weight: var(--heading-font-weight);
+    font-style: var(--heading-font-style);
+    transition: color .45s cubic-bezier(.785,.135,.15,.86),border .45s cubic-bezier(.785,.135,.15,.86);
+    overflow: visible;
+}
+.btnn:hover{
+    
+    font-style: bold;   
+    background-color:transparent;  
+    color: #fff;
+    border: 1px solid #ffffff;
+}
+small{
+    color: #e6746e;
+    margin-left: 5px;
+    text-align: center;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+}
+/* -------------------------------------------------------------------------------------------- */
+.Button{
+    position: relative;
+    color: #ffffff;
+    cursor: pointer;
+    background-color:#1b133c ;
+    padding: 14px 28px;
+    line-height: normal;
+    border-radius: 0;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: .2em;
+    font-family: var(--heading-font-family);
+    font-weight: var(--heading-font-weight);
+    font-style: var(--heading-font-style);
+    z-index: 1;
+    
+ }
+ 
+ .Button:hover{
+    background-color: #ffffff;
+    color: #1b133c;
+    border:1px solid #1b133c;
+ }
+ 

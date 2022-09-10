@@ -1,0 +1,29 @@
+{
+  "cart": [
+    {
+      "product": {
+        "id": "94",
+        "name": "uchiha",
+        "price": "55",
+        "imageUrl": "assets/img/t-shirt/uchiha hoodie.jpg"
+      },
+      "id": 1
+    },
+    {
+      "id": 2
+    },
+    {
+      "id": 3
+    },
+    {
+      "product": {
+        "id": "92",
+        "name": "GOJO",
+        "price": "45",
+        "imageUrl": "assets/img/t-shirt/jjk hoodie.PNG"
+      },
+      "id": 4
+    }
+  ],
+  "wishList": []
+}

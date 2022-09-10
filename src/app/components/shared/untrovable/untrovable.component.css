@@ -1,0 +1,23 @@
+.card{
+    border:none;
+    width:100%;
+    margin-top: 80px;
+    margin-bottom:180px;
+}
+.card-header{
+    border:none;
+    text-align: center;
+    background-color: #ffffff;
+    white-space: nowrap;
+}
+.card-body{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    border:none;
+    font-size: 17px;
+    font-family:var(--text-font-family);
+    font-weight:var( --text-font-weight);
+    font-style: var(--text-font-style);
+    color:rgb(54, 54, 54);
+}

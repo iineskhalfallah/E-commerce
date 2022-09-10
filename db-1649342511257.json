@@ -1,0 +1,28 @@
+{
+  "cart": [
+    {
+      "product": {
+        "id": "105",
+        "name": "killua hoodie",
+        "price": "50",
+        "imageUrl": "assets/img/t-shirt/killuah.jpg",
+        "brands": "other brand",
+        "collection": "tshirt"
+      },
+      "id": 1
+    },
+    {
+      "id": 2
+    },
+    {
+      "product": {
+        "id": "49",
+        "name": "nana jean",
+        "price": "45",
+        "imageUrl": "assets/img/jeans/nana.jpg"
+      },
+      "id": 3
+    }
+  ],
+  "wishList": []
+}

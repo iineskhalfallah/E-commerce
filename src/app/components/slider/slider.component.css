@@ -1,0 +1,336 @@
+
+img{
+    width:30%;
+    display: block;
+    margin: auto;
+}
+.Header__MainNav{
+    margin-top: 33px;
+}
+.icons{
+    float: right;
+}
+ /* ------------------------------------------------------------------------------------ */
+ ng-sidebar{
+    transition:cubic-bezier(0.645, 0.045, 0.355, 1);
+
+}
+.ng-sidebar__content--animate{
+    -moz-transition: left 0.5s ease;
+    transition: left 0.5s ease;
+}
+.Drawer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 380px;
+    height: 100%;
+    max-height: none;
+    z-index: 150;
+    background: #ffffff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    transition: transform .5s cubic-bezier(.645,.045,.355,1),visibility .5s cubic-bezier;
+    touch-action: manipulation;
+    box-shadow: 0 0 2.5rem rgba(85, 81, 81, 0.2);
+    
+}
+
+.Drawer__Header {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 70px;
+    max-height: 60px;
+    background: inherit;
+    text-align: center;
+    z-index: 1;
+    border-bottom: 1px solid rgb(207, 207, 207);
+}
+
+.Drawer__Container {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.Drawer__Header--bordered {
+    box-shadow: 0 -1px #dddce2 inset;
+}
+
+.Drawer__Main {
+    flex: 1 1 auto;
+    overflow: auto;
+}
+/* cart item if they exist */
+.CartItem {
+    display: table;
+    table-layout: fixed;
+    margin: 30px 0;
+    width: 100%;
+}
+.Cart__Checkout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 18px;
+}
+.btncheckout{
+        color: #ffffff;
+        background-color: #1b133c;
+        position: relative;
+        display: inline-block;
+        padding: 14px 28px;
+        line-height: normal;
+        border: 1px solid transparent;
+        border-radius: 0;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: .2em;
+        font-size: 17px;
+        font-family: var(--heading-font-family);
+        font-weight: var(--heading-font-weight);
+        font-style: var(--heading-font-style);
+        z-index: 1;
+        width: 100%;
+    
+}
+.btncheckout:hover{
+    color: #1b133c;
+    border-color: #1b133c;
+    background-color: #ffffff;
+}
+
+.fa-close{
+    font-size: small;
+    color: #1b133c;
+}
+.Drawer__Footer {
+    padding: 20px 30px 30px 30px;
+}
+.Drawer--fromRight .Drawer__Close {
+    right: 30px;
+    left: auto;
+}
+.Drawer__Close {
+    position: absolute;
+    margin-left: 0;
+    left: 18px;
+    top: calc(50% - 7px);
+    line-height: 0;
+}
+
+button, input[type=submit] {
+    padding: 0;
+    overflow: visible;
+    background: 0 0;
+    border: none;
+    border-radius: 0;
+    -webkit-appearance: none;
+}
+
+.Drawer__Content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: calc(100% - 60px);
+    max-height: calc(100% - 50px);
+}
+
+:root {
+    --heading-font-family: Montserrat, sans-serif;
+    --heading-font-weight: 500;
+    --heading-font-style: normal;
+    --text-font-family: "Nunito Sans", sans-serif;
+    --text-font-weight: 400;
+    --text-font-style: normal;
+    --drawer-transition-timing: cubic-bezier(0.645, 0.045, 0.355, 1)
+}
+ul{
+    list-style: none;
+    
+}
+li{
+    margin-top:12px;
+}
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+  }
+  /* ---------------------------------------------------------------------------- */
+ nav{
+    margin-top: 18px;
+}
+.Header__MainNav {
+    position: absolute;
+    left: 0;
+    top:0;
+    padding-bottom: 18px;
+    width: 100%;
+    text-align: center;
+    margin-right: 45px;
+}
+.Header--center .Header__FlexItem {
+    margin-bottom: 5px;
+}
+.Header__Wrapper{
+    
+    position: sticky;
+    opacity: 1;
+    display: block;
+    
+    padding-left:50px;
+    
+    padding-right: 50px;
+}
+.HorizontalList{
+    border-bottom:1px solid rgb(212, 212, 212);
+}
+ul {
+    margin: 0;
+    padding: 0;
+    
+    list-style: none;
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+li{
+    list-style: none;
+   
+}
+.Header--center .Header__Wrapper.Header__Wrapper {
+    padding-bottom:31px;
+}
+.Header__FlexItem {
+    display: flex;
+    margin-bottom: 10px;
+    }
+h1{
+    margin-left: auto;
+    margin-right: auto; 
+    }
+.icons{
+    margin-top: 12px;
+    justify-content: flex-end;
+    
+    align-items: center;
+}
+
+.HorizontalList {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 24px;
+    justify-content: center;
+    list-style: none;
+}
+.Header__LinkSpacer {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    color: transparent;
+    pointer-events: none;
+    user-select: none;
+}
+.Header__LinkSpacer::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transform: scale(0,1);
+    transform-origin: left center;
+    border-bottom: 0 solid #ffffff;
+    
+}
+.HorizontalList--spacingLoose .HorizontalList__Item {
+    margin-right: 14px;
+    margin-left: 14px;
+}
+.HorizontalList__Item {
+    display: inline-block;
+    margin: 6px 8px 6px 8px;
+}
+
+.Linklist {
+    list-style: none;
+    padding: 0;
+}
+.Linklist__Item {
+  
+    display: block;
+    margin-bottom: 12px;
+    width: 100%;
+    line-height: 1.5;
+    text-align: left;
+    
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  button{
+      border: none;
+      outline: none;
+      background-color: inherit;
+      font-family: inherit;
+  }
+  .dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  z-index: 1;
+  min-width: 300px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  .dropdown-content a {
+    color: #1b133c;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 12px;
+  }
+  .dropdown-content a:hover {
+    background-color: #ffffff;
+  }
+  .Link--secondary{
+    color: rgb(177, 171, 171);
+    font-family: fallback;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+}
+.Linklist__Item:hover{
+    color: #c3bec9;
+}
+  .dropdown:hover .dropdown-content {
+    display: block;
+    
+    }
+ 
+.Header__Icon+.Header__Icon {
+    margin-left: 18px;
+}
+.Header__MainNav a[routerLink="/admin/users"] {
+    color: white;
+    background-color: #F7453F;
+    padding: 5px 8px 5px 10px !important;
+    border-radius: 3px;
+    display: inline-flex;
+}
+a {
+    color: inherit;
+    background-color: transparent;
+    text-decoration: none;
+}
+.Header__Icon{
+    margin-left: 18px;
+    justify-content: flex-end;
+   
+    z-index: 1;
+}

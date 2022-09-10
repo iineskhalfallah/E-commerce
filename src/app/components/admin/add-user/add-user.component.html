@@ -1,0 +1,69 @@
+<div class="appNavv">
+    <app-slider></app-slider>
+  </div>
+<div class="Container ">
+    <a class="Form__ItemHelp l Heading" routerLink="/admin/users">go back to users list</a>
+            <div class="PageContent PageContent--fitScreen PageContent--extraNarrow">
+                <form id="create_customer"accept-charset="UTF-8"  
+                class="Form Form--spacingTight form-group" [formGroup]="registerForm" >
+                <header class="Form__Header">
+                    <div style="margin:0 auto;">
+                        <img src="assets/img/logo/cutee.png" text-align ="center"width="100px">
+                        <h1 class="Form__Title Heading u-h1" style="font-size: 20px;" >Add User</h1>
+                        <p class="Form__Legend" style="font-size: 17px;text-align:center" >Please fill in the information below:</p>
+                    </div>
+                </header>
+                <div class="Form__Item"> 
+                    <input type="text" name="name"
+                    class="Form__Input form-control"  
+                    [ngClass]="{'is-invalid': registerForm.get('name').touched && registerForm.get('name').invalid }"
+                    placeholder="First name"   
+                    formControlName ="name" > 
+                    <label class="Form__FloatingLabel">First name</label>
+                    <span class="invalid-feedback">First Name can't be blank </span>
+                </div>
+                <div class="Form__Item"> 
+                    <input type="text" class="Form__Input" 
+                    name="last name" aria-label="Last name" 
+                    placeholder="Last name" formControlName ="lastname"> 
+                    <label class="Form__FloatingLabel">Last name</label>
+                    
+                </div>
+                <div class="Form__Item"> 
+                    <input type="email" class="Form__Input  form-control" 
+                    name="customer[email]" aria-label="Email" 
+                    [ngClass]="{'is-invalid ': registerForm.get('email').touched && registerForm.get('email').invalid }"
+                    placeholder="Email" required="required" formControlName ="email"> 
+                    <label class="Form__FloatingLabel">Email</label>
+                    <span class="invalid-feedback">
+                    <span *ngIf="registerForm.get('email').hasError('required')"> email can't be blank</span>
+                    <span *ngIf="registerForm.get('email').hasError('email')"> email must be valid</span>
+                    </span>
+                </div>
+                <div class="Form__Item"> 
+                    <input type="password" class="Form__Input  form-control _ar_hide_" 
+                    [ngClass]="{'is-invalid': registerForm.get('password').touched && registerForm.get('password').invalid }"
+                    name="customer[password]" aria-label="Password" 
+                    placeholder="Password" required="required" 
+                    _ar_hide_="width:400px;height:50.6667px;margin:0px;position:static;display:block;" 
+                    formControlName ="password"> 
+                    <label class="Form__FloatingLabel">Password</label>
+                    <span class="invalid-feedback">
+                        <span *ngIf="registerForm.get('password').hasError('required')"> password required</span>
+                        <span *ngIf="registerForm.get('password').hasError('minlength')"> password must contain minimum 6 character </span>   
+                    </span>
+                </div>
+               
+                    <div class="Form__Item"> 
+                    <select class="Form__Select  form-control"  formControlName="role"
+                            name="role" aria-label="role" >
+                            <option  value="user">user</option>
+                            <option value="admin">admin</option>                            
+                        </select>
+                    </div>
+                    
+                    <button (click)="add()" class="Form__Submit Button Button--primary Button--full navigable">add User</button>
+                </form>
+            </div>
+   
+</div>

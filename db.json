@@ -1,0 +1,69 @@
+{
+  "cart": [
+    {
+      "product": {
+        "id": "41",
+        "name": "tokyo ghoul",
+        "price": "55",
+        "imageUrl": "assets/img/jeans/tk.jpg"
+      },
+      "id": 2
+    },
+    {
+      "product": {
+        "id": "49",
+        "name": "nana jean",
+        "price": "45",
+        "imageUrl": "assets/img/jeans/nana.jpg"
+      },
+      "id": 3
+    },
+    {
+      "product": {
+        "id": "49",
+        "name": "nana jean",
+        "price": "45",
+        "imageUrl": "assets/img/jeans/nana.jpg"
+      },
+      "id": 4
+    },
+    {
+      "product": {
+        "id": "49",
+        "name": "nana jean",
+        "price": "45",
+        "imageUrl": "assets/img/jeans/nana.jpg"
+      },
+      "id": 5
+    },
+    {
+      "product": {
+        "id": "49",
+        "name": "nana jean",
+        "price": "45",
+        "imageUrl": "assets/img/jeans/nana.jpg"
+      },
+      "id": 6
+    },
+    {
+      "product": {
+        "id": "49",
+        "name": "nana jean",
+        "price": "45",
+        "imageUrl": "assets/img/jeans/nana.jpg"
+      },
+      "id": 7
+    }
+  ],
+  "wishList": [
+    {
+      "product": {
+        "id": "17",
+        "name": "gojo glass painting",
+        "price": "30",
+        "imageUrl": "assets/img/glassPainting/gojoo.jpg"
+      },
+      "id": 1
+    }
+  ]
+}

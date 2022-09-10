@@ -1,0 +1,201 @@
+<div class="container-fluid">
+    <div class="row">
+      <owl-carousel-o class="Slide"[options]="customOptions"> 
+        <ng-template carouselSlide>
+          <img class="image"src="assets/img/banners/jjk.jpg" >
+          <div class="carousel-caption text-left">
+            <h3 class="textjjk">NEW arrival</h3>
+            <h2 class="textjjk"> jujutsu kaisen x sakura </h2>
+            <p><a class="btn " routerLink="/jujutsukaisen" role="button">Shop now</a></p>
+          </div>
+        </ng-template> 
+        <ng-template  carouselSlide>
+          <img class="image"src="assets/img/logo/laylatrapnest.png">
+          <div class="carousel-caption text-left">
+            <h3 class="text">NEW arrival</h3>
+            <h2 class="text"> nana x sakura </h2>
+            <p><a class="btn jojobtn" routerLink="/nana"role="button">Shop now</a></p>
+          </div>
+        </ng-template>  
+        <ng-template carouselSlide>
+          <img class="image"src="assets/img/banners/Demon_Slayer.jpg">
+          <div class="carousel-caption text-left">
+            <h3 class="text">NEW arrival</h3>
+            <h2 class="text"> demon slayer x sakura </h2>
+            <p><a class="btn bleachbtn"routerLink="/demonSlayer" role="button">Shop now</a></p>
+          </div>
+        </ng-template>  
+      </owl-carousel-o>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="SectionHeader SectionHeader--center">
+        <h3 class="SectionHeader__SubHeading" style="font-size: 17px;" >Featured Collection</h3>
+        <h2 class="SectionHeader__Heading" style="font-size: 20px;" >Anoraks</h2>
+    </div>
+      </div>
+  </div>
+<div>
+    <app-products></app-products>
+</div>
+<button routerLink="/allProduct" class="B"style="text-align:center">view ALL Product</button>
+<div class="container">
+    <div class="index-section">
+        <style type="text/css"> .logo-list__header { text-align: center; } 
+        .logo-bar { text-align: center; margin-top: 100px; margin-bottom: 0px; } 
+        .logo-bar__item { display: inline-block; vertical-align: middle; max-width: 160px; margin: 0 20px 20px; } 
+        .logo-bar__image { display: block; margin: 0 auto; } 
+        .logo-bar__link { display: block; text-decoration: none; } 
+        /*sprite image css*/ 
+        .logo-list > .logo-bar > .logo-bar__item span.logo-bar-img__link { background-repeat: no-repeat; background-size: cover; width: 160px; height: 70px; display: block; } 
+        .logo-list > .logo-bar > .logo-bar__item:nth-of-type(1) span.logo-bar-img__link {background-position: 0 0;} 
+        .logo-list > .logo-bar > .logo-bar__item:nth-of-type(2) span.logo-bar-img__link {background-position: -177px 0;}
+        .logo-list > .logo-bar > .logo-bar__item:nth-of-type(3) span.logo-bar-img__link {background-position: -350px 0;} 
+        .logo-list > .logo-bar > .logo-bar__item:nth-of-type(4) span.logo-bar-img__link {background-position: -524px 0;} 
+        .logo-list > .logo-bar > .logo-bar__item:nth-of-type(5) span.logo-bar-img__link {background-position: -702px 0;} 
+        .logo-list > .logo-bar > .logo-bar__item:nth-of-type(6) span.logo-bar-img__link {background-position: -878px 0;} 
+        .logo-list > .logo-bar > .logo-bar__item:nth-of-type(6) span.logo-bar-img__link {background-position: -980px 0;} 
+
+        /*End sprite image css*/
+        </style>
+        <div class="logo-list">
+            <div class="logo-bar">
+                <div class="logo-bar__item">
+                    <a routerLink="/naruto" class="logo-bar__link navigable" style="font-size: 17px;">
+                        <span class="logo-bar-img__link Image--lazyLoaded" >
+                            <img src="assets/img/logo/Anime-Google-Logo-3.png"alt="Naruto" class="lazyautosizes Image--lazyLoaded" data-sizes="auto" data-parent-fit="cover" sizes="160px">
+                        </span>
+                    </a>
+                </div>
+                <div class="logo-bar__item">
+                    <a routerLink="/nana" class="logo-bar__link navigable" style="font-size: 17px;" >
+                        <span class="logo-bar-img__link Image--lazyLoaded" >
+                            <img src="assets/img/logo/2560px-Nana_anime_logo.svg.png" alt="Nana" class="lazyautosizes Image--lazyLoaded" data-sizes="auto" data-parent-fit="cover" sizes="160px">
+                        </span>
+                    </a>
+                </div>
+                <div class="logo-bar__item">
+                    <a routerLink="/demonSlayer" class="logo-bar__link navigable" style="font-size: 17px;" data-open-accessibility-text-original="17px">
+                        <span class="logo-bar-img__link Image--lazyLoaded" >
+                        <img src="assets/img/logo/Kimetsu_no_Yaiba_logo.svg.png" alt="Evangelion Neon Genesis" class="lazyautosizes Image--lazyLoaded" data-sizes="auto" data-parent-fit="cover" sizes="160px">
+                            
+                        </span>
+                    </a>
+                </div>
+                <div class="logo-bar__item">
+                    <a  routerLink="/jujutsukaisen" class="logo-bar__link navigable" style="font-size: 17px;" data-open-accessibility-text-original="17px">
+                        <span class="logo-bar-img__link Image--lazyLoaded" >
+                                <img src="assets/img/logo/Jujutsu_Kaisen_logo_in_Japan.png"alt="jujutsu kaisen" class="lazyautosizes Image--lazyLoaded" data-sizes="auto" data-parent-fit="cover" sizes="160px">
+                        </span>
+                    </a>
+                </div>
+                <!-- <div class="logo-bar__item">
+                    <a href="/collections/jojos-bizarre-adventure" class="logo-bar__link navigable" style="font-size: 17px;" data-open-accessibility-text-original="17px">
+                        <span class="logo-bar-img__link Image--lazyLoaded">
+                        <img src="assets/img/logo/Jojo_s_bizarre_adv_logo.png"alt="Jojo Bizarre Adventure" class="lazyautosizes Image--lazyLoaded" data-sizes="auto" data-parent-fit="cover" sizes="160px">
+                            
+                        </span>
+                    </a>
+                </div> -->
+                <div class="logo-bar__item">
+                    <a routerLink="/aot" class="logo-bar__link navigable" style="font-size: 17px;" data-open-accessibility-text-original="17px">
+                        <span class="logo-bar-img__link Image--lazyLoaded">
+                                <img src="assets/img/logo/Attack_on_Titan_logo.png"alt="hunter x hunter" class="lazyautosizes Image--lazyLoaded" data-sizes="auto" data-parent-fit="cover" sizes="160px">
+                            
+                        </span>
+                    </a>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="CollectionList CollectionList--grid "> 
+        <a routerLink="/tshirts" class="CollectionItem CollectionItem--expand Carousel__Cell navigable" style="font-size: 17px;">
+           <div class="CollectionItem__Wrapper CollectionItem__Wrapper--normal">
+            <img class="i"src="assets/img/banners/tshirts banner.jpg">
+                <div class="CollectionItem__ImageWrapper">
+                    <div class="CollectionItem__Image Image--contrast Image--zoomOut Image--lazyLoaded" ></div>
+                        <div class="CollectionItem__Content CollectionItem__Content--middleCenter">
+                            <header class="SectionHeader">
+                                <div class="shade">
+                                <h2 class="SectionHeader__Heading SectionHeader__Heading--emphasize Heading u-h1" style="font-size: 22px;">T-SHIRT</h2>
+                                    <div class="SectionHeader__ButtonWrapper">
+                                        <button routerLink="/tshirts" class="CollectionItem__Link Button" style="font-size: 17px;">View products</button>
+                                    </div>
+                                </div>
+                            </header>
+                        </div>
+                    </div>
+                </div>
+            </a>
+    
+        <a routerLink="/phonecases" class="CollectionItem CollectionItem--expand Carousel__Cell navigable" style="font-size: 17px;">
+           <div class="CollectionItem__Wrapper CollectionItem__Wrapper--normal">
+            <img class="i"src="assets/img/banners/cases.jpg">
+                <div class="CollectionItem__ImageWrapper">
+                    <div class="CollectionItem__Image Image--contrast Image--zoomOut Image--lazyLoaded" ></div>
+                        <div class="CollectionItem__Content CollectionItem__Content--middleCenter">
+                            <header class="SectionHeader">
+                                <h2 class="SectionHeader__Heading SectionHeader__Heading--emphasize Heading u-h1"  style="font-size: 22px;">phone cases</h2>
+                                    <div class="SectionHeader__ButtonWrapper">
+                                        <button routerLink="/phonecases" class="CollectionItem__Link Button" style="font-size: 17px;">View products</button>
+                                    </div>
+                            </header>
+                        </div>
+                    </div>
+                </div>
+            </a>
+     
+        <a routerLink="/glasspaintings" class="CollectionItem CollectionItem--expand Carousel__Cell navigable" style="font-size: 17px;">
+           <div class="CollectionItem__Wrapper CollectionItem__Wrapper--normal img">
+            <img class="i"src="assets/img/banners/glasss.jpg">
+                <div class="CollectionItem__ImageWrapper">
+                    <div class="CollectionItem__Image Image--contrast Image--zoomOut Image--lazyLoaded" ></div>
+                        <div class="CollectionItem__Content CollectionItem__Content--middleCenter">
+                            <header class="SectionHeader">
+                                <h2 class="SectionHeader__Heading SectionHeader__Heading--emphasize Heading u-h1" style="font-size: 22px;" >glass paintings</h2>
+                                    <div class="SectionHeader__ButtonWrapper">
+                                        <button routerLink="/glasspaintings"class="CollectionItem__Link Button" style="font-size: 17px;">View products</button>
+                                    </div>
+                            </header>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        <a routerLink="/jeans" class="CollectionItem CollectionItem--expand Carousel__Cell navigable" style="font-size: 17px;">
+           <div class="CollectionItem__Wrapper CollectionItem__Wrapper--normal">
+            <img class="i"src="assets/img/banners/jean.jpg">
+                <div class="CollectionItem__ImageWrapper">
+                    <div class="CollectionItem__Image Image--contrast Image--zoomOut Image--lazyLoaded" ></div>
+                        <div class="CollectionItem__Content CollectionItem__Content--middleCenter">
+                            <header class="SectionHeader">
+                                <h2 class="SectionHeader__Heading SectionHeader__Heading--emphasize Heading u-h1"  style="font-size: 22px;">jeans</h2>
+                                    <div class="SectionHeader__ButtonWrapper">
+                                        <button routerLink="/jeans" class="CollectionItem__Link Button" style="font-size: 17px;">View products</button>
+                                    </div>
+                            </header>
+                        </div>
+                    </div>
+                </div>
+            </a>
+    
+        <a routerLink="/totebags" class="CollectionItem CollectionItem--expand Carousel__Cell navigable" style="font-size: 17px;">
+           <div class="CollectionItem__Wrapper CollectionItem__Wrapper--normal">
+            <img class="i"src="assets/img/banners/totban.jpg">
+                <div class="CollectionItem__ImageWrapper">
+                    <div class="CollectionItem__Image Image--contrast Image--zoomOut Image--lazyLoaded" ></div>
+                        <div class="CollectionItem__Content CollectionItem__Content--middleCenter">
+                            <header class="SectionHeader">
+                                <h2 class="SectionHeader__Heading SectionHeader__Heading--emphasize Heading u-h1"  style="font-size: 22px;">tote bag</h2>
+                                    <div class="SectionHeader__ButtonWrapper">
+                                        <button routerLink="/totebags" class="CollectionItem__Link Button" style="font-size: 17px;">View products</button>
+                                    </div>
+                            </header>
+                        </div>
+                    </div>
+                </div>
+            </a>
+</div>

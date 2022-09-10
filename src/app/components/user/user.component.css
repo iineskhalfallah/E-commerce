@@ -1,0 +1,13 @@
+.container{
+    max-width: 100%;
+    left:0;
+    right: 0;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.appnav{
+    position:sticky;
+    top:0;
+    z-index: 200;
+    background-color: #ffffff;
+}

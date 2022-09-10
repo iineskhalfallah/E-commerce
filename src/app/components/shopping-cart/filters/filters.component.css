@@ -1,0 +1,140 @@
+
+ #isp_search_result_page_container div.isp_left_container {
+    padding-top: 5em;
+}
+#isp_left_container_facets .isp_search_res_facets_container .isp_single_facet_wrapper {
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #ccc;
+    margin-right: 10px;
+    transition: all .5s ease-in-out;
+    overflow-y: hidden;
+}
+#isp_left_container_facets .isp_search_res_facets_container .isp_single_facet_wrapper .isp_facet_title {
+    margin-bottom: 0.4em;
+    text-align: left;
+    line-height: initial;
+}
+.isp_custom_price_container input.isp_custom_price_input[type=number] {
+    display: inline-block;
+    margin: 0;
+    max-width: 20%;
+    min-width: 20%;
+    width: 20%;
+    height: 24px;
+    min-height: 20px;
+    padding: 0 2px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    font-size: 11px;
+    line-height: initial;
+    vertical-align: middle;
+    text-indent: initial;
+    border-radius: 2px;
+}
+
+#isp_left_container .isp_facet_value a div.isp_facet_check_box_icon.isp_facet_check_box_icon_not_checked {
+    border-color: #ccc;
+    border-width: 1px;
+    border-style: solid;
+}
+#isp_left_container_facets .isp_facet_value a .isp_facet_value_name .isp_facet_value_name_not_selected {
+    text-transform: uppercase;
+    color: #6a6a6a;
+}
+.isp_facet_title .isp_facet_title_name {
+    color: #1b133c;
+    letter-spacing: 2.4px;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: fallback,sans-serif!important;
+    text-transform: uppercase;
+}
+.isp_facet_value_name_not_selected {
+    text-transform: uppercase;
+    letter-spacing: 2.4px;
+    color: #6a6a6a;
+    text-decoration: none;
+    cursor: pointer;
+    font-family:sans-serif!important;
+    margin-left: 10px;
+}
+
+.check{
+    border-color: #ccc;
+    border-width: 1px;
+    border-style: solid;
+}
+a{
+    text-decoration:none;
+}
+
+.categories .Brands {
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #ccc;
+    margin-right: 10px;
+    transition: all .5s ease-in-out;
+    overflow-y: hidden;
+}
+#isp_left_container_facets .isp_custom_price_container {
+    padding-bottom: 0.6em;
+    text-indent: 0;
+    overflow: hidden;
+    text-align: left;
+    display: block;
+    margin: 0 0 5px;
+    line-height: initial;
+}
+.isp_custom_price_container label.isp_custom_price_currency {
+    font-weight: 400;
+    margin-right: 3px;
+    font-size: 11px;
+    display: inline;
+    float: initial;
+    padding: 0;
+}
+.isp_custom_price_container input.isp_custom_price_input[type=number] {
+    display: inline-block;
+    margin: 0;
+    max-width: 20%;
+    min-width: 20%;
+    width: 20%;
+    height: 24px;
+    min-height: 20px;
+    padding: 0 2px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    font-size: 11px;
+    line-height: initial;
+    vertical-align: middle;
+    text-indent: initial;
+    border-radius: 2px;
+}
+.isp_custom_price_container {
+    padding-bottom: 0.6em;
+    text-indent: 0;
+    overflow: hidden;
+    text-align: left;
+    display: block;
+    margin: 0 0 5px;
+    line-height: initial;
+}
+.isp_custom_price_container button.isp_custom_price_submit {
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    border-radius: 1px;
+    border: 1px solid #ccc;
+    margin-left: 3px;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: 600;
+    padding: 0 0 2px;
+    line-height: normal;
+    min-width: initial;
+    color: inherit;
+    font-size: inherit;
+    vertical-align: middle;
+    min-height: initial;
+}

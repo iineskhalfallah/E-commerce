@@ -1,0 +1,14 @@
+<div class="card">
+    <img class="image"src={{naruto.imageUrl}}>
+    <div class="middle">          
+        <button class="btn" (click)="handlerAddToCart()">Add to cart</button>
+    </div>
+    <div class="card-body">
+        
+        <p class="Heading ">{{naruto.name}}</p>
+        <button (click)="handlerAddtoWishList()"class="Heading" style="font-size: 12px;color:rgb(75, 74, 74);text-decoration: underline;cursor: pointer;">Add to wishlist</button>
+        <br>
+        <span class="Heading Price">{{naruto.price}}</span>
+                
+    </div>
+</div>

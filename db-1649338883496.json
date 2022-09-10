@@ -1,0 +1,119 @@
+{
+  "cart": [
+    {
+      "product": {
+        "id": "92",
+        "name": "GOJO",
+        "price": "45",
+        "imageUrl": "assets/img/t-shirt/jjk hoodie.PNG"
+      },
+      "id": 1
+    },
+    {
+      "cartItem": {
+        "id": 1,
+        "productId": "92",
+        "productName": "GOJO",
+        "productImage": "assets/img/t-shirt/jjk hoodie.PNG",
+        "price": "45",
+        "qty": 1
+      },
+      "id": 2
+    },
+    {
+      "cartItem": {
+        "id": 1,
+        "productId": "92",
+        "productName": "GOJO",
+        "productImage": "assets/img/t-shirt/jjk hoodie.PNG",
+        "price": "45",
+        "qty": 1
+      },
+      "id": 3
+    },
+    {
+      "cartItem": {
+        "id": 1,
+        "productId": "92",
+        "productName": "GOJO",
+        "productImage": "assets/img/t-shirt/jjk hoodie.PNG",
+        "price": "45",
+        "qty": 1
+      },
+      "id": 4
+    },
+    {
+      "product": {
+        "id": "93",
+        "name": "nana t-shirt",
+        "price": "40",
+        "imageUrl": "assets/img/t-shirt/nanatshirt.jpg"
+      },
+      "id": 5
+    },
+    {
+      "product": {
+        "id": "93",
+        "name": "nana t-shirt",
+        "price": "40",
+        "imageUrl": "assets/img/t-shirt/nanatshirt.jpg"
+      },
+      "id": 6
+    },
+    {
+      "product": {
+        "id": "92",
+        "name": "GOJO",
+        "price": "45",
+        "imageUrl": "assets/img/t-shirt/jjk hoodie.PNG"
+      },
+      "id": 7
+    },
+    {
+      "product": {
+        "id": "15",
+        "name": "cowboy",
+        "price": "50",
+        "imageUrl": "assets/img/t-shirt/cowboy bepob.jpg"
+      },
+      "id": 8
+    },
+    {
+      "product": {
+        "id": "15",
+        "name": "cowboy",
+        "price": "50",
+        "imageUrl": "assets/img/t-shirt/cowboy bepob.jpg"
+      },
+      "id": 9
+    },
+    {
+      "product": {
+        "id": "15",
+        "name": "cowboy",
+        "price": "50",
+        "imageUrl": "assets/img/t-shirt/cowboy bepob.jpg"
+      },
+      "id": 10
+    },
+    {
+      "product": {
+        "id": "15",
+        "name": "cowboy",
+        "price": "50",
+        "imageUrl": "assets/img/t-shirt/cowboy bepob.jpg"
+      },
+      "id": 11
+    },
+    {
+      "product": {
+        "id": "15",
+        "name": "cowboy",
+        "price": "50",
+        "imageUrl": "assets/img/t-shirt/cowboy bepob.jpg"
+      },
+      "id": 12
+    }
+  ],
+  "wishList": []
+}

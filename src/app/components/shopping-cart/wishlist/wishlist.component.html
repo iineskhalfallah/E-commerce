@@ -1,0 +1,18 @@
+
+<div class="Cart__ItemList">
+    <div class="CartItemWrapper">
+        <div class="CartItem">
+            <div class="CartItem__ImageWrapper AspectRatio">
+                <img src={{wishlistItem.productImage}}>
+            </div>
+            <div class="CartItem__Info">
+                <h2 class="CartItem__Title Heading" style="font-size: 17px;" >{{wishlistItem.productName}}</h2>
+                    <div class="CartItem__PriceList">
+                        <span class="CartItem__Price Price" style="font-size: 17px;">{{wishlistItem.price|currency:'TND '}}</span>
+                    </div>
+                    <button (click)="handlerRemoveFromWL()" class="btnwithoutline Heading" style="font-size: 17px;text-decoration: underline;cursor: pointer;">Remove</button>
+                
+            </div>
+        </div>
+    </div>
+</div>

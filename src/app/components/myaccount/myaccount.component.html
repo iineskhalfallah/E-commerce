@@ -1,0 +1,31 @@
+<div class="appnav">
+    <app-nav></app-nav>
+  </div>
+<div class="Container Container--narrow">
+    <div class="hh">
+        <header class="PageHeader"> 
+            <a  routerLink="/login" class="PageHeader__Back Heading Text--subdued Link Link--primary u-h7 navigable" style="font-size: 17px;">Logout</a>
+            <div class="SectionHeader" *ngIf="let user of users">
+                <h1 class="SectionHeader__Heading Heading u-h1"  style="font-size: 20px;">My account</h1>
+                <p class="SectionHeader__Description"  style="font-size: 17px;">Welcome back </p>
+            </div>
+        </header>
+        <div class="PageLayout PageLayout--breakLap">
+            <div class="PageLayout__Section">
+            <div class="Segment">
+                <h2 class="Segment__Title Heading u-h7" style="font-size: 17px;">My orders</h2>
+                <div class="Segment__Content">
+                    <p style="font-size: 17px;">You haven't placed any orders yet</p>
+                </div>
+            </div>
+            <div class="Segment">
+                <h2 class="Segment__Title Heading u-h7"  style="font-size: 17px;">No addresses</h2>
+                <div class="Segment__Content">
+                    <p style="font-size: 17px;">No addresses are currently saved</p>
+                    
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>

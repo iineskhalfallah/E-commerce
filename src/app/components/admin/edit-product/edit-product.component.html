@@ -1,0 +1,73 @@
+<div class="appNavv">
+    <app-slider></app-slider>
+  </div>
+  <div class="Container ">
+    <a class="Form__ItemHelp l Heading" routerLink="/admin/dashbord">go back to dashbord</a>
+    <div class="PageContent PageContent--fitScreen PageContent--extraNarrow">
+        <form id="create_customer"accept-charset="UTF-8"  
+        class="Form Form--spacingTight form-group" [formGroup]="addForm" enctype="multipart/form-data">
+        <header class="Form__Header">
+            <div style="margin:0 auto;">
+                <img src="assets/img/logo/cute2.png" text-align ="center"width="100px">
+                <h1 class="Form__Title Heading u-h1" style="font-size: 20px;" >update Product</h1>
+                <p class="Form__Legend" style="font-size: 17px;text-align:center" >Please fill in the information below:</p>
+            </div>
+        </header>
+        
+            <div class="Form__Item"> 
+                <input type="text" name="name"
+                [ngClass]="{'is-invalid': addForm.get('name').touched && addForm.get('name').invalid }"
+                formControlName="name"
+                class="Form__Input form-control"  placeholder="Name" > 
+                <label class="Form__FloatingLabel">Name</label>
+            </div>
+           
+            <div class="Form__Item"> 
+                <input type="number" class="Form__Input form-control" 
+                [ngClass]="{'is-invalid ': addForm.get('price').touched && addForm.get('price').invalid }"
+                formControlName="price"
+                name="price" aria-label="price" 
+                placeholder="Price"> 
+                <label class="Form__FloatingLabel">Price</label>
+                
+            </div>
+            <div class="Form__Item"> 
+                <input type="file" class="Form__File  form-control"  
+                name="imageUrl" > 
+                <label class="Form__FloatingLabel">imageUrl</label>
+                
+            </div>
+            <div class="Form__Item"> 
+                <select class="Form__Select  form-control" formControlName="brands"
+                    name="brands" aria-label="brands" 
+                    placeholder="brands" required="required">
+                    <option class="heading"value="nana">nana</option>
+                    <option class="heading"value="naruto">naruto</option>
+                    <option class="heading"value="attack on titan">attack on titan</option>
+                    <option class="heading"value="jujutsu kaisen">jujutsu kaisen</option>
+                    <option class="heading"value="demon slayer">demon slayer</option>
+                    <option class="heading"value="other brand">other brand</option>
+
+                    
+                </select>
+                <label class="Form__FloatingLabel">brands</label>
+            </div>
+            <div class="Form__Item"> 
+            <select class="Form__Select  form-control"  formControlName="collection"
+                    name="collection" aria-label="collection" 
+                    placeholder="collection" required="required">
+                    <option class="heading"value="Jean">jean</option>
+                    <option class="heading"value="phone case">phone case</option>
+                    <option class="heading"value="glass painting">glass painting</option>
+                    <option class="heading"value="tshirt">tshirt</option>
+                    <option class="heading"value="tote bag">tote bag</option>
+                    
+                </select>
+                <label class="Form__FloatingLabel">collection</label>
+            </div>
+            
+            <button (click)="update()" class="Form__Submit Button Button--primary Button--full navigable">update product</button>
+        </form>
+    </div>
+
+</div>
